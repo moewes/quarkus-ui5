@@ -1,0 +1,5 @@
+name: quarkus-ui5
+title: Quarkus - Ui5
+version: dev
+nav:
+  - modules/ROOT/nav.adoc
