@@ -26,12 +26,14 @@ class CardDataTest {
         String name = "name";
         String path = " path";
         Integer updateInterval = 5;
+        DataRequest request = DataRequest.builder().build();
 
         CardData item = CardData.builder()
                 .json(json)
                 .name(name)
                 .path(path)
                 .updateInterval(updateInterval)
+                .request(request)
                 .build();
 
         Map<String, Object> attributesForJson = item.getAttributesForJson();
@@ -40,6 +42,7 @@ class CardDataTest {
         assertEquals(attributesForJson.get("name"), name);
         assertEquals(attributesForJson.get("path"), path);
         assertEquals(attributesForJson.get("updateInterval"), updateInterval);
+        assertEquals(attributesForJson.get("request"), request);
 
     }
 
@@ -49,6 +52,7 @@ class CardDataTest {
         String name = "name";
         String path = " path";
         Integer updateInterval = 5;
+        DataRequest request = DataRequest.builder().build();
 
         CardData item = CardData.builder().build();
 
@@ -56,6 +60,7 @@ class CardDataTest {
         item.setName(name);
         item.setPath(path);
         item.setUpdateInterval(updateInterval);
+        item.setRequest(request);
 
         Map<String, Object> attributesForJson = item.getAttributesForJson();
 
@@ -63,6 +68,6 @@ class CardDataTest {
         assertEquals(attributesForJson.get("name"), name);
         assertEquals(attributesForJson.get("path"), path);
         assertEquals(attributesForJson.get("updateInterval"), updateInterval);
-
+        assertEquals(attributesForJson.get("request"), request);
     }
 }

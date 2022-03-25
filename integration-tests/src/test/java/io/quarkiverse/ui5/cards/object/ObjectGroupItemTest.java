@@ -1,12 +1,12 @@
 package io.quarkiverse.ui5.cards.object;
 
-import org.junit.jupiter.api.Test;
-
-import java.util.Map;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.wildfly.common.Assert.assertNotNull;
+
+import java.util.Map;
+
+import org.junit.jupiter.api.Test;
 
 class ObjectGroupItemTest {
 

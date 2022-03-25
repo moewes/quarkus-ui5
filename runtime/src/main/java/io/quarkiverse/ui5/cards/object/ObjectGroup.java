@@ -1,13 +1,14 @@
 package io.quarkiverse.ui5.cards.object;
 
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import lombok.Builder;
-import lombok.Setter;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+
+import lombok.Builder;
+import lombok.Setter;
 
 @Setter
 @Builder

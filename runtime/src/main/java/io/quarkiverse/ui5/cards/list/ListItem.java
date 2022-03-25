@@ -1,10 +1,13 @@
 package io.quarkiverse.ui5.cards.list;
 
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import lombok.Builder;
-
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+
+import io.quarkiverse.ui5.cards.common.CardAction;
+import lombok.Builder;
 
 @Builder
 public class ListItem {
@@ -14,7 +17,7 @@ public class ListItem {
     //private ValueStateItem info; // TODO
     // private String highlight; // TODO
     //private Icon icon; // TODO
-    //private List<Action> actions; // TODO
+    private List<CardAction> actions; // TODO Test
     //private Microchart chart; // TODO
     // actionStrip // TODO
     //attributes // TODO
@@ -28,6 +31,9 @@ public class ListItem {
         }
         if (description != null) {
             result.put("description", description);
+        }
+        if (actions != null) {
+            result.put("actions", actions);
         }
         return result;
     }

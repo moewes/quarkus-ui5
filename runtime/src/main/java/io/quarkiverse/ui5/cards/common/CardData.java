@@ -1,18 +1,17 @@
 package io.quarkiverse.ui5.cards.common;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
-
 import lombok.Builder;
 import lombok.Setter;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @Setter
 @Builder
 public class CardData {
 
-    //private DataRequest request; // TODO
+    private DataRequest request;
     private Object json;
     // extension // TODO
     private String name;
@@ -34,6 +33,9 @@ public class CardData {
         }
         if (path != null) {
             result.put("path", path);
+        }
+        if (request != null) {
+            result.put("request", request);
         }
         return result;
     }

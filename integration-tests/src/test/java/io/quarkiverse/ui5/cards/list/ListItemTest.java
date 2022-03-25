@@ -1,7 +1,10 @@
 package io.quarkiverse.ui5.cards.list;
 
+import io.quarkiverse.ui5.cards.common.CardAction;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -24,16 +27,19 @@ class ListItemTest {
 
         String title = "title";
         String description = "description";
-        ;
+        List<CardAction> actions = Arrays.asList(CardAction.builder().build());
+
         ListItem item = ListItem.builder()
                 .title(title)
                 .description(description)
+                .actions(actions)
                 .build();
 
         Map<String, Object> attributesForJson = item.getAttributesForJson();
 
         assertEquals(title, attributesForJson.get("title"));
         assertEquals(description, attributesForJson.get("description"));
+        assertEquals(actions, attributesForJson.get("actions"));
     }
 
 }
