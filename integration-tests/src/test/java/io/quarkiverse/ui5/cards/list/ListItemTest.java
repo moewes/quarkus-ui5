@@ -1,14 +1,15 @@
 package io.quarkiverse.ui5.cards.list;
 
-import io.quarkiverse.ui5.cards.common.CardAction;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import org.junit.jupiter.api.Test;
+
+import io.quarkiverse.ui5.cards.common.CardAction;
 
 class ListItemTest {
 

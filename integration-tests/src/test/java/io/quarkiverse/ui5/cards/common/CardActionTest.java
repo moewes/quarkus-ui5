@@ -1,11 +1,11 @@
 package io.quarkiverse.ui5.cards.common;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import org.junit.jupiter.api.Test;
 
 class CardActionTest {
 
@@ -26,8 +26,7 @@ class CardActionTest {
         String enabled = "{...}";
         CardActionParameter parameter = CardActionParameter.builder().build();
 
-        CardAction item =
-                CardAction.builder().type(type).enabled(enabled).parameters(parameter).build();
+        CardAction item = CardAction.builder().type(type).enabled(enabled).parameters(parameter).build();
 
         Map<String, Object> attributesForJson = item.getAttributesForJson();
 
@@ -38,7 +37,6 @@ class CardActionTest {
 
     @Test
     public void allSetters() {
-
 
         CardAction.CardActionType type = CardAction.CardActionType.SUBMIT;
         String enabled = "{...}";
