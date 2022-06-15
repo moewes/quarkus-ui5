@@ -1,5 +1,7 @@
 package io.quarkiverse.ui5;
 
+import java.util.UUID;
+
 import javax.enterprise.context.ApplicationScoped;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
@@ -61,8 +63,12 @@ public class PageBuilderHelper {
     }
 
     public String getIntegrationCardItem(String manifestUrl) {
+        return getIntegrationCardItem(manifestUrl, UUID.randomUUID().toString());
+    }
+
+    public String getIntegrationCardItem(String manifestUrl, String id) {
         return "<ui-integration-card manifest=\"" + manifestUrl +
-                "\"></ui-integration-card>";
+                "\" id=\"" + id + "\"></ui-integration-card>";
     }
 
     public String getQuickLinkItem(String url, String title, String subTitle, String icon,

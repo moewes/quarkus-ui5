@@ -19,6 +19,7 @@ public class Ui5CardManifestCard {
 
     private CardContent content;
     private CardData data;
+    private CardConfiguration configuration;
 
     @JsonAnyGetter
     public Map<String, Object> getAttributesForJson() {
@@ -32,6 +33,9 @@ public class Ui5CardManifestCard {
         if (data != null) {
             result.put("data", data);
         }
+        if (configuration != null) {
+            result.put("configuration", configuration);
+        }
         return result;
     }
 
@@ -40,8 +44,8 @@ public class Ui5CardManifestCard {
         OBJECT("Object"),
         TABLE("Table"),
         CALENDER("Calender"),
-        TIMELINE("Timeline");
-        // Adaptiv
+        TIMELINE("Timeline"),
+        ADAPTIVE("AdaptiveCard");
         // Component
         // WebPage
 
