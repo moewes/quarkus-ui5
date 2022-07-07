@@ -25,7 +25,7 @@ public class ListCard extends IntegrationCard {
     /*
      * // TODO
      * public void setGroup(ListGroup listGroup) {
-     * 
+     *
      * }
      */
 

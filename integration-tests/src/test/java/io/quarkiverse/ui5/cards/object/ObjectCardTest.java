@@ -29,7 +29,8 @@ class ObjectCardTest {
                 ((List<ObjectGroup>) ((CardContent) cardManifest.getCard()
                         .getAttributesForJson()
                         .get("content")).getAttributesForJson().get(
-                                "groups")).get(0));
+                                "groups"))
+                        .get(0));
 
     }
 }

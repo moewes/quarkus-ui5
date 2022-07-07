@@ -4,11 +4,11 @@ public class Ui5DevModeTest {
 
     /*
      * // Start hot reload (DevMode) test with your extension loaded
-     * 
+     *
      * @RegisterExtension
      * static final QuarkusDevModeTest devModeTest = new QuarkusDevModeTest()
      * .setArchiveProducer(() -> ShrinkWrap.create(JavaArchive.class));
-     * 
+     *
      * @Test
      * public void writeYourOwnDevModeTest() {
      * // Write your dev mode tests here - see the testing extension guide
@@ -16,6 +16,6 @@ public class Ui5DevModeTest {
      * // Assertions.assertTrue(true, "Add dev mode assertions to " + getClass().getName()); //
      * // FIXME
      * }
-     * 
+     *
      */
 }
