@@ -16,6 +16,8 @@ public class Ui5Repository {
     private final Map<String, IntegrationCardItem> integrationCards = new HashMap<>();
     private final Map<String, SpaceItem> spaces = new HashMap<>();
 
+    private final Map<String, SpaceItem> elementsApps = new HashMap<>();
+
     public void addIntegrationCard(IntegrationCardItem card) {
         integrationCards.put(card.getName(), card);
     }
@@ -38,5 +40,17 @@ public class Ui5Repository {
 
     public SpaceItem getSpace(String name) {
         return spaces.get(name);
+    }
+
+    public void addElementsApp(SpaceItem card) {
+        elementsApps.put(card.getName(), card);
+    }
+
+    public List<SpaceItem> getElementsApps() {
+        return new ArrayList<>(elementsApps.values());
+    }
+
+    public SpaceItem getElementsApp(String name) {
+        return elementsApps.get(name);
     }
 }

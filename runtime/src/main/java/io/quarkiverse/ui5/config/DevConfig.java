@@ -13,4 +13,10 @@ public class DevConfig {
     @ConfigItem(defaultValue = "false")
     @Getter
     boolean allCardsPage;
+
+    /**
+     * xxxx
+     */
+    @ConfigItem(defaultValue = "https://ui5.sap.com")
+    String path;
 }

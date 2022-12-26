@@ -10,19 +10,19 @@
     </parent>
     <groupId>io.quarkiverse.ui5</groupId>
     <artifactId>quarkus-ui5-parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Quarkus - Ui5 - Parent</name>
     <modules>
-        <module>deployment</module>
         <module>runtime</module>
+        <module>deployment</module>
     </modules>
     <properties>
         <compiler-plugin.version>3.8.1</compiler-plugin.version>
         <maven.compiler.release>11</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <quarkus.version>2.13.2.Final</quarkus.version>
+        <quarkus.version>2.13.3.Final</quarkus.version>
     </properties>
     <dependencyManagement>
         <dependencies>
