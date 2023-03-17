@@ -10,7 +10,7 @@
     </parent>
     <groupId>io.quarkiverse.ui5</groupId>
     <artifactId>quarkus-ui5-parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Quarkus - Ui5 - Parent</name>
     <modules>
