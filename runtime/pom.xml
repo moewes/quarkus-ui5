@@ -12,7 +12,7 @@
     <name>Quarkus - Ui5 - Runtime</name>
 
     <properties>
-        <lombok.version>1.18.24</lombok.version>
+        <lombok.version>1.18.26</lombok.version>
     </properties>
 
     <dependencies>
