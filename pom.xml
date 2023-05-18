@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.quarkiverse</groupId>
         <artifactId>quarkiverse-parent</artifactId>
-        <version>12</version>
+        <version>13</version>
     </parent>
     <groupId>io.quarkiverse.ui5</groupId>
     <artifactId>quarkus-ui5-parent</artifactId>
@@ -22,7 +22,7 @@
         <maven.compiler.release>11</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <quarkus.version>2.16.6.Final</quarkus.version>
+        <quarkus.version>3.0.3.Final</quarkus.version>
     </properties>
     <dependencyManagement>
         <dependencies>

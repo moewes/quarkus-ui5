@@ -1,7 +1,7 @@
 package io.quarkiverse.ui5;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 
 import io.quarkiverse.ui5.runtime.Ui5Repository;
 import io.quarkiverse.ui5.runtime.repository.IntegrationCardItem;

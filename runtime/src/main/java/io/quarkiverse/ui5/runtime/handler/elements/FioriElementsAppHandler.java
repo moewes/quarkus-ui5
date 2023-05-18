@@ -1,6 +1,6 @@
 package io.quarkiverse.ui5.runtime.handler.elements;
 
-import javax.enterprise.inject.spi.CDI;
+import jakarta.enterprise.inject.spi.CDI;
 
 import io.quarkiverse.ui5.fe.FioriElementsPageBuilder;
 import io.quarkus.arc.runtime.BeanContainer;

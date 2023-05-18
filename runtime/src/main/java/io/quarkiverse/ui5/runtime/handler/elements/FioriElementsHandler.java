@@ -2,9 +2,9 @@ package io.quarkiverse.ui5.runtime.handler.elements;
 
 import java.util.logging.Logger;
 
-import javax.enterprise.inject.Default;
-import javax.enterprise.inject.Instance;
-import javax.enterprise.inject.spi.CDI;
+import jakarta.enterprise.inject.Default;
+import jakarta.enterprise.inject.Instance;
+import jakarta.enterprise.inject.spi.CDI;
 
 import io.quarkiverse.ui5.runtime.Ui5Repository;
 import io.quarkiverse.ui5.runtime.repository.SpaceItem;

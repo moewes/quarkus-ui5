@@ -2,7 +2,7 @@ package io.quarkiverse.ui5;
 
 import java.util.logging.Logger;
 
-import javax.enterprise.inject.spi.CDI;
+import jakarta.enterprise.inject.spi.CDI;
 
 import io.quarkus.arc.ManagedContext;
 import io.quarkus.arc.runtime.BeanContainer;
